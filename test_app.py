@@ -10,7 +10,7 @@ def client():
 def test_home(client):
     res = client.get('/')
     assert res.status_code == 200
-    assert res.get_json() == {"message": "Hello, World!"}
+    assert res.get_json() == {"message": "Hello, World! v2"}
 
 def test_health(client):
     res = client.get('/health')
